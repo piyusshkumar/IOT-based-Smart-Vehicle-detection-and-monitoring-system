@@ -41,9 +41,29 @@ function App() {
 
   return (
 
+  <div>
+
+
     <div
       style={{
-        height: "100vh",
+        width: "97%",
+        padding: "20px",
+        textAlign: "center",
+        backgroundColor: "#222",
+        color: "white",
+        fontFamily: "Arial",
+        fontSize: "28px",
+        fontWeight: "bold"
+      }}
+    >
+      IOT SMART VEHICLE SECURITY SYSTEM
+    </div>
+
+    {/* STATUS SECTION */}
+
+    <div
+      style={{
+        height: "90vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -54,12 +74,12 @@ function App() {
       }}
     >
 
-      <h1> IOT SMART VEHICLE SECURITY SYSTEM</h1>
+      <h2 style={{fontSize: "40px"}}>
 
-      <h2>
         {status === "ALERT"
-          ? "🚨 THEFT ALERT!"
-          : "✅ VEHICLE SAFE"}
+          ? "🚨 THEFT ALERT!!!!!!!"
+          : "✅ VEHICLE SAFE, Dont Worry!!!"}
+
       </h2>
 
       <button
@@ -68,10 +88,16 @@ function App() {
           padding: "15px 30px",
           fontSize: "18px",
           cursor: "pointer",
-          marginTop: "20px",}}
-     >RESET SYSTEM</button>
+          marginTop: "20px"
+        }}
+      >
+        RESET SYSTEM
+      </button>
+
     </div>
-  );
+
+  </div>
+);
 }
 
 export default App;
